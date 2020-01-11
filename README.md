@@ -7,4 +7,4 @@ A music player application coded in electron from scratch.
 <img src="Monsa Screen Shot .png">
 
 # Download (macOS X)
-Click here to download [monsa-music-darwin-x64.zip](https://pauladugyamfi.com/files/monsa-music-darwin-x64.zip "Download") 
+Click the link to download [monsa-music-darwin-x64.zip](https://pauladugyamfi.com/files/monsa-music-darwin-x64.zip "Download") 
