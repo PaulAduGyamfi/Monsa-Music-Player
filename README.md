@@ -20,3 +20,6 @@ Click the link to download [monsa-music-darwin-x64.zip](https://pauladugyamfi.co
 * **Play Album/Playlist**
 * **Shuffle Album/Playlist**
 * **Play/Pause/Skip Forward/Skip Back**
+
+
+<img src="monsa music screenshot.gif">
