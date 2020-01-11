@@ -1,0 +1,1854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" href="glide.min.css">
+    <link rel="stylesheet" href="monsa.css">
+    <script src="https://kit.fontawesome.com/22d3bb616c.js" crossorigin="anonymous"></script>
+<title>Monsa Music</title>
+</head>
+<body>
+    <main-container>
+        <!--------------main content start--------------->
+        <div class="main-content-wrap">
+                <!-- ------------------------------------------------------------------------------ -->
+    <div class="queue-overlay">
+        <div class="queue-display">
+                <div class="queue-display-title">Play Queue</div>
+                <div class="queue-list-wrap">
+                        <ul id="queueList"></ul>
+                </div>
+        </div>
+        <div class="transparent-overlay">
+    
+        </div>
+    </div>
+<!-- ------------------------------------------------------------------------------ -->
+
+<div class="bestOfalbum page" id="bestOfEazi">
+    <div class="bestOfalbum-header">
+           <a href="#home"><span id="bestOfalbum-back"> 
+                    <i class="fas fa-chevron-left"></i>
+                     Browse
+            </span></a>
+
+    </div>
+    <div class="bestOfalbum-banner">
+        <div class="bestOfalbum-cover">
+            <img src="MONSA-IMGS/Mr-Eazi-headshot.jpg" alt="">
+        </div>
+        <div class="bestOfalbum-title">
+                <span id="playlist-Title">Best of</span><br>
+                <span id="playlist-Name">Mr. Eazi</span><br>
+                <span id="playlist-Category">Afro Beat</span>
+                
+                <div class="bestOfalbum-start">
+                        <div class="bestOfalbum-button">
+                                <button onclick="queuePlay(eaziPlaylist);"><i class="fas fa-play"></i> <span>Play</span></button>
+                            </div>
+                        <div class="bestOfalbum-button">
+                                <button onclick="queuePlay(mix(eaziPlaylist));"><i class="fas fa-random"></i><span>Shuffle</span></button>
+                            </div>
+                </div>
+        </div>
+    </div>
+    <div class="bestOfalbum-info">
+        <div class="info-para">
+                Oluwatosin Ajibade, better known by his stage name Mr Eazi, is a Nigerian singer, songwriter, and entrepreneur. He is the pioneer of Banku music, a fusion sound he describes as a mixture of Ghanaian highlife and Nigerian chord progressions and patterns.
+        </div>
+
+    </div>
+    
+
+    <div class="wrap">
+            <div class="song-item" onclick="getSong(this)" index='4'>
+                    <div class="artwork2">
+                        <span class="overlay">
+                                <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                </span>
+                        <img src="MONSA-IMGS/mreazi-legover.jpg" alt="">
+                </div>
+                    <div class="song-item-caption">
+                                    <span id="song-item-Name">Leg Over</span><br>
+                                    <span id="song-item-Artist">Mr. Eazi</span>
+                    </div>   
+                    <span id="songLength">3:21</span>
+            </div>
+
+            <div class="song-item" onclick="getSong(this)" index='28'>
+                    <div class="artwork2">
+                        <span class="overlay">
+                                <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                </span>
+                        <img src="MONSA-IMGS/skintight-mreazi.jpg" alt="">
+                </div>
+                    <div class="song-item-caption">
+                                    <span id="song-item-Name">Skin Tight</span><br>
+                                    <span id="song-item-Artist">Mr. Eazi</span>
+                    </div>
+                    <span id="songLength">3:25</span>
+            </div>
+
+            <div class="song-item" onclick="getSong(this)" index='8'>
+                    <div class="artwork2">
+                        <span class="overlay">
+                                <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                </span>
+                        <img src="MONSA-IMGS/eugy-body.jpg" alt="">
+                </div>
+                    <div class="song-item-caption">
+                                    <span id="song-item-Name">Body (feat. Mr.Eazi)</span><br>
+                                    <span id="song-item-Artist">Eugy</span>
+                    </div>
+                    <span id="songLength">3:36</span>
+            </div>
+
+            <div class="song-item" onclick="getSong(this)" index='46'>
+                    <div class="artwork2">
+                        <span class="overlay">
+                                <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                </span>
+                        <img src="MONSA-IMGS/mreazi-danceforme.jpg" alt="">
+                </div>
+                    <div class="song-item-caption">
+                                    <span id="song-item-Name">Dance For Me</span><br>
+                                    <span id="song-item-Artist">Mr.Eazi</span>
+                    </div>
+                    <span id="songLength">3:24</span>
+            </div>
+
+            <div class="song-item" onclick="getSong(this)" index='47'>
+                    <div class="artwork2">
+                        <span class="overlay">
+                                <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                </span>
+                        <img src="MONSA-IMGS/Mr.Eazi-Hollup.jpg" alt="">
+                </div>
+                    <div class="song-item-caption">
+                                    <span id="song-item-Name">Hollup</span><br>
+                                    <span id="song-item-Artist">Mr.Eazi (feat. Joey B, Dammy Krane)</span>
+                    </div>
+                    <span id="songLength">4:20</span>
+            </div>
+
+            <div class="song-item" onclick="getSong(this)" index='48'>
+                    <div class="artwork2">
+                        <span class="overlay">
+                                <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                </span>
+                        <img src="MONSA-IMGS/MrEazi - Bankulize.jpg" alt="">
+                </div>
+                    <div class="song-item-caption">
+                                    <span id="song-item-Name">Bankulize</span><br>
+                                    <span id="song-item-Artist">Mr.Eazi</span>
+                    </div>
+                    <span id="songLength">4:08</span>
+            </div>
+
+            <div class="song-item" onclick="getSong(this)" index='49'>
+                    <div class="artwork2">
+                        <span class="overlay">
+                                <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                </span>
+                        <img src="MONSA-IMGS/Mr Eazi - In The Morning ft Big Lean.jpg" alt="">
+                </div>
+                    <div class="song-item-caption">
+                                    <span id="song-item-Name">In The Morning</span><br>
+                                    <span id="song-item-Artist">Mr.Eazi (feat. Big Lean)</span>
+                    </div>
+                    <span id="songLength">3:35</span>
+            </div>
+
+            <div class="song-item" onclick="getSong(this)" index='50'>
+                    <div class="artwork2">
+                        <span class="overlay">
+                                <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                </span>
+                        <img src="MONSA-IMGS/Mr Eazi _ King Promise - Call Waiting _feat. Joey B_.png" alt="">
+                </div>
+                    <div class="song-item-caption">
+                                    <span id="song-item-Name">Call Waiting</span><br>
+                                    <span id="song-item-Artist">Mr.Eazi & King Promise (feat. Joey B)</span>
+                    </div>
+                    <span id="songLength">2:30</span>
+            </div>
+
+            <div class="song-item" onclick="getSong(this)" index='51'>
+                    <div class="artwork2">
+                        <span class="overlay">
+                                <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                </span>
+                        <img src="MONSA-IMGS/MrEazi-Ohema.jpg" alt="">
+                </div>
+                    <div class="song-item-caption">
+                                    <span id="song-item-Name">Ohema</span><br>
+                                    <span id="song-item-Artist">DJ Spinall (feat. Mr. Eazi)</span>
+                    </div>
+                    <span id="songLength">3:28</span>
+            </div>
+
+        </div>
+
+</div>
+
+            <div class="bestOfalbum page" id="album">
+                    <div class="bestOfalbum-header">
+                                <a href="#home"><span id="bestOfalbum-back">
+                                    <i class="fas fa-chevron-left"></i>
+                                     Browse
+                            </span></a>
+                
+                    </div>
+                    <div class="bestOfalbum-banner">
+                        <div class="bestOfalbum-cover">
+                            <img src="MONSA-IMGS/africangiant -albumcover.jpg" alt="">
+                        </div>
+                        <div class="bestOfalbum-title">
+                                <span id="playlist-Title">New Album</span><br>
+                                <span id="playlist-Name">African Giant</span><br>
+                                <span id="playlist-Category">Burna Boy</span>
+
+                                <div class="bestOfalbum-start">
+                                        <div class="bestOfalbum-button">
+                                                <button onclick="queuePlay(AfricanGiantAlbum);"><i class="fas fa-play"></i> <span>Play</span></button>
+                                            </div>
+                                        <div class="bestOfalbum-button">
+                                                <button onclick="queuePlay(mix(AfricanGiantAlbum));"><i class="fas fa-random"></i><span>Shuffle</span></button>
+                                            </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="bestOfalbum-info">
+                        <div class="info-para">
+                                African Giant is the fourth studio album by Nigerian singer Burna Boy. It was released on July 26, 2019, by Spaceship Entertainment, Bad Habit, Atlantic Records and Warner Music. The album is a mixture of Afro-fusion, Afrobeat, dancehall, pop and hip hop.
+                        </div>
+                       
+                    </div>
+                    
+                
+                    <div class="wrap">
+                            <div class="song-item" onclick="getSong(this)" index='61'>
+                                    <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>1</h6></span>
+                                    <div class="song-item-caption">
+                                                    <span id="song-item-Name">African Giant</span>
+                                    </div>   
+                                    <span id="songLength">3:04</span>
+                            </div>
+                
+                            <div class="song-item" onclick="getSong(this)" index='62'>
+                                    <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>2</h6></span>
+                                    <div class="song-item-caption">
+                                                    <span id="song-item-Name">Anybody</span>
+                                    </div>
+                                    <span id="songLength">3:15</span>
+                            </div>
+                
+                            <div class="song-item" onclick="getSong(this)" index='63'>
+                                    <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>3</h6></span>
+                                    <div class="song-item-caption">
+                                                    <span id="song-item-Name">Wetin Man Go Do</span>
+                                    
+                                    </div>
+                                    <span id="songLength">3:08</span>
+                            </div>
+
+                            <div class="song-item" onclick="getSong(this)" index='64'>
+                                    <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>4</h6></span>
+                                    <div class="song-item-caption">
+                                                    <span id="song-item-Name">Dangote</span>
+                            
+                                    </div>
+                                    <span id="songLength">3:45</span>
+                            </div>
+
+                            <div class="song-item" onclick="getSong(this)" index='65'>
+                                    <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>5</h6></span>
+                                    <div class="song-item-caption">
+                                                    <span id="song-item-Name">Gum Body (feat. Jorja Smith)</span>
+                                                   
+                                    </div>
+                                    <span id="songLength">3:15</span>
+                            </div>
+
+                            <div class="song-item" onclick="getSong(this)" index='27'>
+                                    <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>6</h6></span>
+                                    <div class="song-item-caption">
+                                                    <span id="song-item-Name">Killin Dem (feat. Zlatan)</span>
+                                            
+                                    </div>
+                                    <span id="songLength">3:42</span>
+                            </div>
+
+                            <div class="song-item" onclick="getSong(this)" index='66'>
+                                    <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>7</h6></span>
+                                    <div class="song-item-caption">
+                                                    <span id="song-item-Name">Omo</span>
+                                            
+                                    </div>
+                                    <span id="songLength">2:27</span>
+                            </div>
+
+                            <div class="song-item" onclick="getSong(this)" index='67'>
+                                    <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>8</h6></span>
+                                    <div class="song-item-caption">
+                                                    <span id="song-item-Name">Secret (feat. Jeremih & Serani)</span>
+                                                   
+                                    </div>
+                                    <span id="songLength">3:23</span>
+                            </div>
+
+                            <div class="song-item" onclick="getSong(this)" index='68'>
+                                    <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>9</h6></span>
+                                    <div class="song-item-caption">
+                                                    <span id="song-item-Name">Collateral Damage</span>
+                                                    
+                                    </div>
+                                    <span id="songLength">3:17</span>
+                            </div>
+
+                            <div class="song-item" onclick="getSong(this)" index='69'>
+                                    <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>10</h6></span>
+                                    <div class="song-item-caption">
+                                                    <span id="song-item-Name">Another Story (feat. M.anifest)</span>
+                                                    
+                                    </div>
+                                    <span id="songLength">4:16</span>
+                            </div>
+
+                            <div class="song-item" onclick="getSong(this)" index='70'>
+                                    <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>11</h6></span>
+                                    <div class="song-item-caption">
+                                                    <span id="song-item-Name">Pull Up</span>
+                                                
+                                    </div>
+                                    <span id="songLength">3:07</span>
+                            </div>
+
+                            <div class="song-item" onclick="getSong(this)" index='71'>
+                                    <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>12</h6></span>
+                                    <div class="song-item-caption">
+                                                    <span id="song-item-Name">Blak Ryno (Skit)</span>
+                                                    
+                                    </div>
+                                    <span id="songLength">1:07</span>
+                            </div>
+
+                            <div class="song-item" onclick="getSong(this)" index='72'>
+                                    <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>13</h6></span>
+                                    <div class="song-item-caption">
+                                                    <span id="song-item-Name">Destiny</span>
+                                                    
+                                    </div>
+                                    <span id="songLength">3:17</span>
+                            </div>
+                            <div class="song-item" onclick="getSong(this)" index='73'>
+                                    <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>14</h6></span>
+                                    <div class="song-item-caption">
+                                                    <span id="song-item-Name">Different (feat. Damian "Jr.Gong" Marley & Angélique Kidjo)</span>
+                                                    
+                                    </div>
+                                    <span id="songLength">3:16</span>
+                            </div>
+
+                            <div class="song-item" onclick="getSong(this)" index='11'>
+                                    <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>15</h6></span>
+                                    <div class="song-item-caption">
+                                                    <span id="song-item-Name">Gbona</span>
+                                                   
+                                    </div>
+                                    <span id="songLength">3:10</span>
+                            </div>
+
+                            <div class="song-item" onclick="getSong(this)" index='12'>
+                                    <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>16</h6></span>
+                                    <div class="song-item-caption">
+                                                    <span id="song-item-Name">On the Low</span>
+                                                    
+                                    </div>
+                                    <span id="songLength">3:08</span>
+                            </div>
+
+                            <div class="song-item" onclick="getSong(this)" index='74'>
+                                    <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>17</h6></span>
+                                    <div class="song-item-caption">
+                                                    <span id="song-item-Name">Show & Tell (feat. Future)</span>
+                                                    
+                                    </div>
+                                    <span id="songLength">2:43</span>
+                            </div>
+
+                            <div class="song-item" onclick="getSong(this)" index='75'>
+                                    <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>18</h6></span>
+                                    <div class="song-item-caption">
+                                                    <span id="song-item-Name">This Side (feat. YG)</span>
+                                                    
+                                    </div>
+                                    <span id="songLength">3:22</span>
+                            </div>
+
+                            <div class="song-item" onclick="getSong(this)" index='76'>
+                                    <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>19</h6></span>
+                                    <div class="song-item-caption">
+                                                    <span id="song-item-Name">Spiritual</span>
+                                                    
+                                    </div>
+                                    <span id="songLength">3:41</span>
+                            </div>
+                
+                        </div>
+                </div>
+
+                <div class="bestOfalbum page" id="dance">
+                        <div class="bestOfalbum-header">
+                                        <a href="#home"><span id="bestOfalbum-back">
+                                        <i class="fas fa-chevron-left"></i>
+                                         Browse
+                                </span></a>
+                    
+                        </div>
+                        <div class="bestOfalbum-banner">
+                            <div class="bestOfalbum-cover">
+                                <img src="MONSA-IMGS/dance2.jpg" alt="">
+                            </div>
+                            <div class="bestOfalbum-title">
+                                    <span id="playlist-Title">Dance</span><br>
+                                    <span id="playlist-Name">African Heat</span><br>
+                                    <span id="playlist-Category">Afro Beat</span>
+
+                                    <div class="bestOfalbum-start">
+                                        <div class="bestOfalbum-button">
+                                                <button onclick="queuePlay(AfricanHeatPlaylist);"><i class="fas fa-play"></i> <span>Play</span></button>
+                                            </div>
+                                        <div class="bestOfalbum-button">
+                                                <button onclick="queuePlay(mix(AfricanHeatPlaylist));"><i class="fas fa-random"></i><span>Shuffle</span></button>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bestOfalbum-info">
+                            <div class="info-para">
+                                    Afro Pop is the hottest new African Dance that incorporates contemporary genres of African popular music from Nigeria, Ghana and across the Continent. ... The warm-up is designed to strengthen the student's ability to adopt to Traditional African, Urban African club movements and multiple hip hop styles.
+                            </div>
+                        
+                        </div>
+                        
+                    
+                        <div class="wrap">
+                                <div class="song-item" onclick="getSong(this)" index='36'>
+                                        <div class="artwork2">
+                                                <span class="overlay">
+                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                        </span>
+                                                <img src="MONSA-IMGS/astar-balaya.jpeg" alt="">
+                                        </div>
+                                        <div class="song-item-caption">
+                                                        <span id="song-item-Name">Balaya</span><br>
+                                                        <span id="song-item-Artist">A-Star</span>
+                                        </div>   
+                                        <span id="songLength">2:38</span>
+                                </div>
+                    
+                                <div class="song-item" onclick="getSong(this)" index='45'>
+                                        <div class="artwork2">
+                                                <span class="overlay">
+                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                        </span>
+                                                <img src="MONSA-IMGS/DJ Cool - Anapa.jpg" alt="">
+                                        </div>
+                                        <div class="song-item-caption">
+                                                        <span id="song-item-Name">Anapa[Apapa]</span><br>
+                                                        <span id="song-item-Artist">DJ Cool</span>
+                                        </div>
+                                        <span id="songLength">2:17</span>
+                                </div>
+                    
+                                <div class="song-item" onclick="getSong(this)" index='37'>
+                                        <div class="artwork2">
+                                                <span class="overlay">
+                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                        </span>
+                                                <img src="MONSA-IMGS/Sho-Madjozi-John-Cena.jpg" alt="">
+                                        </div>
+                                        <div class="song-item-caption">
+                                                        <span id="song-item-Name">John Cena</span><br>
+                                                        <span id="song-item-Artist">Sho Madjozi</span>
+                                        </div>
+                                        <span id="songLength">3:24</span>
+                                </div>
+
+                                <div class="song-item" onclick="getSong(this)" index='44'>
+                                        <div class="artwork2">
+                                                <span class="overlay">
+                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                        </span>
+                                                <img src="MONSA-IMGS/l.a.x-gwara gwara.jpeg" alt="">
+                                        </div>
+                                        <div class="song-item-caption">
+                                                        <span id="song-item-Name">Gwara Gwara</span><br>
+                                                        <span id="song-item-Artist">L.A.X</span>
+                                        </div>
+                                        <span id="songLength">3:14</span>
+                                </div>
+
+                                <div class="song-item" onclick="getSong(this)" index='39'>
+                                        <div class="artwork2">
+                                                <span class="overlay">
+                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                        </span>
+                                                <img src="MONSA-IMGS/shattwale-freedom.jpg" alt="">
+                                        </div>
+                                        <div class="song-item-caption">
+                                                        <span id="song-item-Name">Freedom</span><br>
+                                                        <span id="song-item-Artist">Shatta Wale</span>
+                                        </div>
+                                        <span id="songLength">3:13</span>
+                                </div>
+
+                                <div class="song-item" onclick="getSong(this)" index='43'>
+                                        <div class="artwork2">
+                                                <span class="overlay">
+                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                        </span>
+                                                <img src="MONSA-IMGS/Dahlingage-potato.jpg" alt="">
+                                        </div>
+                                        <div class="song-item-caption">
+                                                        <span id="song-item-Name">Potato</span><br>
+                                                        <span id="song-item-Artist">Dahlin Gage</span>
+                                        </div>
+                                        <span id="songLength">2:27</span>
+                                </div>
+
+                                <div class="song-item" onclick="getSong(this)" index='40'>
+                                        <div class="artwork2">
+                                                <span class="overlay">
+                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                        </span>
+                                                <img src="MONSA-IMGS/DJ Spicy - Duna.jpg" alt="">
+                                        </div>
+                                        <div class="song-item-caption">
+                                                        <span id="song-item-Name">Duna</span><br>
+                                                        <span id="song-item-Artist">DJ Spicy</span>
+                                        </div>
+                                        <span id="songLength">2:29</span>
+                                </div>
+
+                                <div class="song-item" onclick="getSong(this)" index='42'>
+                                        <div class="artwork2">
+                                                <span class="overlay">
+                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                        </span>
+                                                <img src="MONSA-IMGS/DJ Flex- Shedonttext.jpg" alt="">
+                                        </div>
+                                        <div class="song-item-caption">
+                                                        <span id="song-item-Name">She Don't Text</span><br>
+                                                        <span id="song-item-Artist">DJ Flex</span>
+                                        </div>
+                                        <span id="songLength">1:47</span>
+                                </div>
+
+                                <div class="song-item" onclick="getSong(this)" index='41'>
+                                        <div class="artwork2">
+                                                <span class="overlay">
+                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                        </span>
+                                                <img src="MONSA-IMGS/matimba-homeboyz.jpeg" alt="">
+                                        </div>
+                                        <div class="song-item-caption">
+                                                        <span id="song-item-Name">Matimba</span><br>
+                                                        <span id="song-item-Artist">Homeboyz</span>
+                                        </div>
+                                        <span id="songLength">4:39</span>
+                                </div>
+
+                                
+                    
+                            </div>
+                    
+                    </div>
+
+                    <div class="bestOfalbum page" id="newDaily">
+                            <div class="bestOfalbum-header">
+                                        <a href="#home"><span id="bestOfalbum-back">
+                                            <i class="fas fa-chevron-left"></i>
+                                             Browse
+                                    </span></a>
+                        
+                            </div>
+                            <div class="bestOfalbum-banner">
+                                <div class="bestOfalbum-cover">
+                                    <img src="MONSA-IMGS/newDaily.jpg" alt="">
+                                </div>
+                                <div class="bestOfalbum-title">
+                                        <span id="playlist-Title">New Tracks</span><br>
+                                        <span id="playlist-Name">New Music Daily</span><br>
+                                        <span id="playlist-Category">Afro Beat</span>
+
+                                        <div class="bestOfalbum-start">
+                                                <div class="bestOfalbum-button">
+                                                        <button onclick="queuePlay(NewMusicDailyPlaylist);"><i class="fas fa-play"></i> <span>Play</span></button>
+                                                    </div>
+                                                <div class="bestOfalbum-button">
+                                                        <button onclick="queuePlay(mix(NewMusicDailyPlaylist));"><i class="fas fa-random"></i><span>Shuffle</span></button>
+                                                    </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="bestOfalbum-info">
+                                <div class="info-para">
+                                        Afro Pop is the hottest new African Dance come and listen to the latest Afro Hits, Afro Vibes, dancehall, afro pop & afro house. Brought to you by Afro Daily For Your Daily Music.
+                                </div>
+                            </div>
+                            
+                        
+                            <div class="wrap">
+                                    <div class="song-item" onclick="getSong(this)" index='52'>
+                                            <div class="artwork2">
+                                                <span class="overlay">
+                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                        </span>
+                                                <img src="MONSA-IMGS/Davido - Disturbance ft. Peruzzi.jpg" alt="">
+                                        </div>
+                                            <div class="song-item-caption">
+                                                            <span id="song-item-Name">Disturbance</span><br>
+                                                            <span id="song-item-Artist">Davido (feat. Peruzzi)</span>
+                                            </div>   
+                                            <span id="songLength">3:40</span>
+                                    </div>
+                        
+                                    <div class="song-item" onclick="getSong(this)" index='53'>
+                                            <div class="artwork2">
+                                                <span class="overlay">
+                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                        </span>
+                                                <img src="MONSA-IMGS/WizKid - Joro .jpg" alt="">
+                                        </div>
+                                            <div class="song-item-caption">
+                                                            <span id="song-item-Name">Joro</span><br>
+                                                            <span id="song-item-Artist">Wizkid</span>
+                                            </div>
+                                            <span id="songLength">4:24</span>
+                                    </div>
+                        
+                                    <div class="song-item" onclick="getSong(this)" index='54'>
+                                            <div class="artwork2">
+                                                <span class="overlay">
+                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                        </span>
+                                                <img src="MONSA-IMGS/laughter,tears-albumcover,..- frireboy.jpeg" alt="">
+                                        </div>
+                                            <div class="song-item-caption">
+                                                            <span id="song-item-Name">Vibration</span><br>
+                                                            <span id="song-item-Artist">Fireboy DML</span>
+                                            </div>
+                                            <span id="songLength">3:19</span>
+                                    </div>
+    
+                                    <div class="song-item" onclick="getSong(this)" index='55'>
+                                            <div class="artwork2">
+                                                <span class="overlay">
+                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                        </span>
+                                                <img src="MONSA-IMGS/jam-wizkid.jpg" alt="">
+                                        </div>
+                                            <div class="song-item-caption">
+                                                            <span id="song-item-Name">Cover Me</span><br>
+                                                            <span id="song-item-Artist">StarBoy (feat. Wizkid & DJ Tunez)</span>
+                                            </div>
+                                            <span id="songLength">3:19</span>
+                                    </div>
+    
+                                    <div class="song-item" onclick="getSong(this)" index='56'>
+                                            <div class="artwork2">
+                                                <span class="overlay">
+                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                        </span>
+                                                <img src="MONSA-IMGS/jam-wizkid.jpg" alt="">
+                                        </div>
+                                            <div class="song-item-caption">
+                                                            <span id="song-item-Name">Blow</span><br>
+                                                            <span id="song-item-Artist">StarBoy (feat. Blaq Jerzee & Wizkid)</span>
+                                            </div>
+                                            <span id="songLength">3:49</span>
+                                    </div>
+    
+                                    <div class="song-item" onclick="getSong(this)" index='57'>
+                                            <div class="artwork2">
+                                                <span class="overlay">
+                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                        </span>
+                                                <img src="MONSA-IMGS/Make-E-No-Cause-Fight-II-artwork.jpg" alt="">
+                                        </div>
+                                            <div class="song-item-caption">
+                                                            <span id="song-item-Name">Too Many Women</span><br>
+                                                            <span id="song-item-Artist">Ajebutter22 (feat. BOJ & Falz)</span>
+                                            </div>
+                                            <span id="songLength">3:21</span>
+                                    </div>
+    
+                                    <div class="song-item" onclick="getSong(this)" index='58'>
+                                            <div class="artwork2">
+                                                <span class="overlay">
+                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                        </span>
+                                                <img src="MONSA-IMGS/Hotkid - Ozana.jpg" alt="">
+                                        </div>
+                                            <div class="song-item-caption">
+                                                            <span id="song-item-Name">Ozana</span><br>
+                                                            <span id="song-item-Artist">Hotkid</span>
+                                            </div>
+                                            <span id="songLength">3:08</span>
+                                    </div>
+    
+                                    <div class="song-item" onclick="getSong(this)" index='59'>
+                                            <div class="artwork2">
+                                                <span class="overlay">
+                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                        </span>
+                                                <img src="MONSA-IMGS/Joey B – No Waste Time Ft. BOJ.jpg" alt="">
+                                        </div>
+                                            <div class="song-item-caption">
+                                                            <span id="song-item-Name">No Waste Time</span><br>
+                                                            <span id="song-item-Artist">Joey B (feat. BOJ)</span>
+                                            </div>
+                                            <span id="songLength">4:15</span>
+                                    </div>
+    
+                                    <div class="song-item" onclick="getSong(this)" index='60'>
+                                            <div class="artwork2">
+                                                <span class="overlay">
+                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                        </span>
+                                                <img src="MONSA-IMGS/kwesi arthur - Zombie.jpg" alt="">
+                                        </div>
+                                            <div class="song-item-caption">
+                                                            <span id="song-item-Name">Zombie</span><br>
+                                                            <span id="song-item-Artist">Kwesi Arthur</span>
+                                            </div>
+                                            <span id="songLength">2:44</span>
+                                    </div>
+    
+                                    
+                        
+                                </div>
+                        
+                        </div>
+<!-----------------------------------  album--------------------------------------------------- -->
+<div class="bestOfalbum page" id="album">
+        <div class="bestOfalbum-header">
+                    <a href="#home"><span id="bestOfalbum-back">
+                        <i class="fas fa-chevron-left"></i>
+                         Browse
+                </span></a>
+    
+        </div>
+        <div class="bestOfalbum-banner">
+            <div class="bestOfalbum-cover">
+                <img src="MONSA-IMGS/laughter,tears-albumcover,..- frireboy.jpeg" alt="">
+            </div>
+            <div class="bestOfalbum-title">
+                    <span id="playlist-Title">New Album</span><br>
+                    <span id="playlist-Name">Laughter, Tears & Goosebumps</span><br>
+                    <span id="playlist-Category">Fireboy DML</span>
+
+                    <div class="bestOfalbum-start">
+                            <div class="bestOfalbum-button">
+                                    <button onclick="queuePlay(LaughterTearsGoosebumps);"><i class="fas fa-play"></i> <span>Play</span></button>
+                                </div>
+                            <div class="bestOfalbum-button">
+                                    <button onclick="queuePlay(mix(LaughterTearsGoosebumps));"><i class="fas fa-random"></i><span>Shuffle</span></button>
+                                </div>
+                    </div>
+            </div>
+        </div>
+        <div class="bestOfalbum-info">
+            <div class="info-para">
+                     The singer taps into soulful lyrics and emotions.
+            </div>
+           
+        </div>
+        
+    
+        <div class="wrap">
+                <div class="song-item" onclick="getSong(this)" index='77'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>1</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Need You</span>
+                        </div>   
+                        <span id="songLength">3:41</span>
+                </div>
+    
+                <div class="song-item" onclick="getSong(this)" index='54'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>2</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Vibration</span>
+                        </div>
+                        <span id="songLength">3:19</span>
+                </div>
+    
+                <div class="song-item" onclick="getSong(this)" index='78'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>3</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Scatter</span>
+                        
+                        </div>
+                        <span id="songLength">2:43</span>
+                </div>
+
+                <div class="song-item" onclick="getSong(this)" index='79'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>4</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Jealous</span>
+                
+                        </div>
+                        <span id="songLength">3:37</span>
+                </div>
+
+                <div class="song-item" onclick="getSong(this)" index='80'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>5</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Energy</span>
+                                       
+                        </div>
+                        <span id="songLength">3:33</span>
+                </div>
+
+                <div class="song-item" onclick="getSong(this)" index='81'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>6</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Like I Do</span>
+                                
+                        </div>
+                        <span id="songLength">3:52</span>
+                </div>
+
+                <div class="song-item" onclick="getSong(this)" index='82'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>7</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Gbas Gbos</span>
+                                
+                        </div>
+                        <span id="songLength">2:33</span>
+                </div>
+
+                <div class="song-item" onclick="getSong(this)" index='23'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>8</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">King</span>
+                                       
+                        </div>
+                        <span id="songLength">2:46</span>
+                </div>
+
+                <div class="song-item" onclick="getSong(this)" index='83'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>9</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Omo Ologo</span>
+                                        
+                        </div>
+                        <span id="songLength">2:22</span>
+                </div>
+
+                <div class="song-item" onclick="getSong(this)" index='84'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>10</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">High on Life</span>
+                                        
+                        </div>
+                        <span id="songLength">2:29</span>
+                </div>
+
+
+                <div class="song-item" onclick="getSong(this)" index='85'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>11</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Feel</span>
+                                        
+                        </div>
+                        <span id="songLength">3:14</span>
+                </div>
+
+                <div class="song-item" onclick="getSong(this)" index='86'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>12</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">What If I Say</span>
+                                        
+                        </div>
+                        <span id="songLength">3:33</span>
+                </div>
+                <div class="song-item" onclick="getSong(this)" index='87'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>13</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Wait and See</span>
+                                        
+                        </div>
+                        <span id="songLength">2:46</span>
+                </div>
+    
+            </div>
+    </div>
+
+    <div class="bestOfalbum page" id="album">
+        <div class="bestOfalbum-header">
+                    <a href="#home"><span id="bestOfalbum-back">
+                        <i class="fas fa-chevron-left"></i>
+                         Browse
+                </span></a>
+    
+        </div>
+        <div class="bestOfalbum-banner">
+            <div class="bestOfalbum-cover">
+                <img src="MONSA-IMGS/the-gamble-albumcover-manifest.jpg" alt="">
+            </div>
+            <div class="bestOfalbum-title">
+                    <span id="playlist-Title">New Album</span><br>
+                    <span id="playlist-Name">The Gamble</span><br>
+                    <span id="playlist-Category">M.anifest</span>
+
+                    <div class="bestOfalbum-start">
+                            <div class="bestOfalbum-button">
+                                    <button onclick="queuePlay(TheGambleAlbum);"><i class="fas fa-play"></i> <span>Play</span></button>
+                                </div>
+                            <div class="bestOfalbum-button">
+                                    <button onclick="queuePlay(mix(TheGambleAlbum));"><i class="fas fa-random"></i><span>Shuffle</span></button>
+                                </div>
+                    </div>
+            </div>
+        </div>
+        <div class="bestOfalbum-info">
+            <div class="info-para">
+                    The Ghanian MC contemplates the risks we take in life and love.
+            </div>
+           
+        </div>
+        
+    
+        <div class="wrap">
+                <div class="song-item" onclick="getSong(this)" index='96'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>1</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">The Gamble (feat. Bayku)</span>
+                        </div>   
+                        <span id="songLength">3:42</span>
+                </div>
+    
+                <div class="song-item" onclick="getSong(this)" index='97'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>2</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Tomorrow (feat. Burna Boy)</span>
+                        </div>
+                        <span id="songLength">3:22</span>
+                </div>
+    
+                <div class="song-item" onclick="getSong(this)" index='98'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>3</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Cucaracha (feat. Worlasi & Kojey Radical)</span>
+                        
+                        </div>
+                        <span id="songLength">3:43</span>
+                </div>
+
+                <div class="song-item" onclick="getSong(this)" index='99'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>4</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Ohemaa (feat. Moelogo)</span>
+                
+                        </div>
+                        <span id="songLength">3:44</span>
+                </div>
+
+                <div class="song-item" onclick="getSong(this)" index='100'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>5</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">From a Distance (feat. B4bonah)</span>
+                                       
+                        </div>
+                        <span id="songLength">3:38</span>
+                </div>
+
+                <div class="song-item" onclick="getSong(this)" index='101'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>6</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Big Mad (feat. Simi)</span>
+                                
+                        </div>
+                        <span id="songLength">3:21</span>
+                </div>
+
+                <div class="song-item" onclick="getSong(this)" index='21'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>7</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">I Dey for U</span>
+                                
+                        </div>
+                        <span id="songLength">2:56</span>
+                </div>
+    
+            </div>
+    </div>
+</div>
+
+<div class="bestOfalbum page" id="album">
+        <div class="bestOfalbum-header">
+                    <a href="#home"><span id="bestOfalbum-back">
+                        <i class="fas fa-chevron-left"></i>
+                         Browse
+                </span></a>
+    
+        </div>
+        <div class="bestOfalbum-banner">
+            <div class="bestOfalbum-cover">
+                <img src="MONSA-IMGS/Make-E-No-Cause-Fight-II-artwork.jpg" alt="">
+            </div>
+            <div class="bestOfalbum-title">
+                    <span id="playlist-Title">New Album</span><br>
+                    <span id="playlist-Name">Make E No Cause Fight 2</span><br>
+                    <span id="playlist-Category">Ajebutter 22, BOJ & Falz</span>
+
+                    <div class="bestOfalbum-start">
+                            <div class="bestOfalbum-button">
+                                    <button onclick="queuePlay(MakeENoCauseFightII);"><i class="fas fa-play"></i> <span>Play</span></button>
+                                </div>
+                            <div class="bestOfalbum-button">
+                                    <button onclick="queuePlay(mix(MakeENoCauseFightII));"><i class="fas fa-random"></i><span>Shuffle</span></button>
+                                </div>
+                    </div>
+            </div>
+        </div>
+        <div class="bestOfalbum-info">
+            <div class="info-para">
+                Ajebutter and Boj return with a Ground Breaking Sequel to the Make E No Cause Fight series. It’s 2019 and the Project is a bigger deal with upbeat records and a phenomenal collaboration with multi-talented/multi-award winning Rapper, ‘FALZ’.
+            </div>
+           
+        </div>
+        
+    
+        <div class="wrap">
+                <div class="song-item" onclick="getSong(this)" index='57'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>1</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Too Many Women</span>
+                        </div>   
+                        <span id="songLength">3:21</span>
+                </div>
+    
+                <div class="song-item" onclick="getSong(this)" index='92'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>2</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Ronaldo</span>
+                        </div>
+                        <span id="songLength">3:43</span>
+                </div>
+    
+                <div class="song-item" onclick="getSong(this)" index='93'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>3</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Rock Your Body</span>
+                        
+                        </div>
+                        <span id="songLength">3:11</span>
+                </div>
+
+                <div class="song-item" onclick="getSong(this)" index='94'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>4</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Baminam</span>
+                
+                        </div>
+                        <span id="songLength">3:04</span>
+                </div>
+
+                <div class="song-item" onclick="getSong(this)" index='95'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>5</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Faaji (feat. Reminisce)</span>
+                                       
+                        </div>
+                        <span id="songLength">3:04</span>
+                </div>
+    
+            </div>
+    </div>
+
+    <div class="bestOfalbum page" id="album">
+        <div class="bestOfalbum-header">
+                    <a href="#home"><span id="bestOfalbum-back">
+                        <i class="fas fa-chevron-left"></i>
+                         Browse
+                </span></a>
+    
+        </div>
+        <div class="bestOfalbum-banner">
+            <div class="bestOfalbum-cover">
+                <img src="MONSA-IMGS/jam-wizkid.jpg" alt="">
+            </div>
+            <div class="bestOfalbum-title">
+                    <span id="playlist-Title">New Album</span><br>
+                    <span id="playlist-Name">SoundMan Vol. 1</span><br>
+                    <span id="playlist-Category">StarBoy</span>
+
+                    <div class="bestOfalbum-start">
+                            <div class="bestOfalbum-button">
+                                    <button onclick="queuePlay(SoundManVolI);"><i class="fas fa-play"></i> <span>Play</span></button>
+                                </div>
+                            <div class="bestOfalbum-button">
+                                    <button onclick="queuePlay(mix(SoundManVolI));"><i class="fas fa-random"></i><span>Shuffle</span></button>
+                                </div>
+                    </div>
+            </div>
+        </div>
+        <div class="bestOfalbum-info">
+            <div class="info-para">
+                The Wizkid’s led Starboy Entertainment presents his long-awaited project called “SoundMan, Vol. 1” EP. Consequently, the ‘SoundMan, Vol. 1’ EP had guest appearances from label-mate, Wizkid, Chronixx, Blaq Jerzee, London, DJ Tunez and Kel P. With production credit to Blaq Jerzee, DJ Tunez and Kel P.
+            </div>
+           
+        </div>
+        
+    
+        <div class="wrap">
+                <div class="song-item" onclick="getSong(this)" index='18'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>1</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Jam</span>
+                        </div>   
+                        <span id="songLength">3:19</span>
+                </div>
+    
+                <div class="song-item" onclick="getSong(this)" index='56'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>2</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Blow</span>
+                        </div>
+                        <span id="songLength">3:49</span>
+                </div>
+    
+                <div class="song-item" onclick="getSong(this)" index='55'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>3</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Cover Me</span>
+                        
+                        </div>
+                        <span id="songLength">3:19</span>
+                </div>
+
+                <div class="song-item" onclick="getSong(this)" index='88'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>4</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Mine</span>
+                
+                        </div>
+                        <span id="songLength">3:21</span>
+                </div>
+
+                <div class="song-item" onclick="getSong(this)" index='89'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>5</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Electric</span>
+                                       
+                        </div>
+                        <span id="songLength">2:58</span>
+                </div>
+
+                <div class="song-item" onclick="getSong(this)" index='90'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>6</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Ease Your Mind</span>
+                                
+                        </div>
+                        <span id="songLength">3:05</span>
+                </div>
+
+                <div class="song-item" onclick="getSong(this)" index='91'>
+                        <span id="song-item-Artist"><i class="fas fa-play fa-xs"></i><h6>7</h6></span>
+                        <div class="song-item-caption">
+                                        <span id="song-item-Name">Thankful</span>
+                                
+                        </div>
+                        <span id="songLength">4:58</span>
+                </div>
+    
+            </div>
+    </div>
+<!-- ------------------------------------------------------------------------------ -->
+    
+<!-- ------------------------------------------------------------------------------ -->
+
+           <div class="home page" >
+                <div class="heading">
+                        <div class="search-box">
+                                <i class="fas fa-search fa-xs"></i>
+                        <input type="search" placeholder="Artists, Songs, ...." id="search" autocomplete="off">
+                        <!-- <div class="settings-icon"><a href="#settings"><i class="fas fa-cog fa-lg" id="settings-open"></i></a></div> -->
+                        </div>
+                        <!-- <div class="upload">
+                                <span>Upload </span>
+                                <i class="fas fa-upload fa-xs"></i>
+                        </div> -->
+                </div>
+        
+        <ul class="search-group" id="list"></ul>
+                
+
+                        <div class="glider-contain multiple, new-singles-wrap">
+                                    
+                                        <h1 id="home-title">Browse</h1>
+                                        <div class="glider" id="top-singles">
+                        <!-----------------Glider------&nbsp;---->
+                        <a href="#BestOfPlayList"><div class="single" id="browseBestOf">
+                                                <div class="caption">
+                                                        <span id="playlist-Title">Best of</span><br>
+                                                        <span id="playlist-Name">Mr. Eazi</span><br>
+                                                        <span id="playlist-Category">Afro Beat</span>
+                                                </div>
+                                                <div class="artwork" id="home-eazi">
+                                                        <span class="overlay">
+                                                                <div class="overlayPlay" onclick="queuePlay(eaziPlaylist);"><i class="fas fa-play fa-xs"></i></div>
+                                                        </span>
+                                                        <img src="#" alt="">
+                                                </div>
+                        
+                                            </div></a>
+                        
+                                            <a href="#AfricanGiantPlayList"><div class="single" id="browseAfricanGiant">
+                                                        <div class="caption">
+                                                                <span id="playlist-Title">New Album</span><br>
+                                                                <span id="playlist-Name">African Giant</span><br>
+                                                                <span id="playlist-Category">Burna Boy</span>
+                                                        </div>
+                                                        <div class="artwork" id="home-awards">
+                                                                <span class="overlay">
+                                                                        <div class="overlayPlay" onclick="queuePlay(AfricanGiantAlbum);"><i class="fas fa-play fa-xs"></i></div>
+                                                                </span>
+                                                                <img src="MONSA-IMGS/home/africangiant.jpg" alt="">
+                                                        </div>
+                                
+                                                    </div></a>
+                        
+                                                    <a href="#DancePlayList"><div class="single" id="browseDance">
+                                                                <div class="caption">
+                                                                        <span id="playlist-Title">Playlist</span><br>
+                                                                        <span id="playlist-Name">African Heat</span><br>
+                                                                        <span id="playlist-Category">Afro Beat</span>
+                                                                </div>
+                                                                <div class="artwork" id="home-eazi">
+                                                                        <span class="overlay">
+                                                                                <div class="overlayPlay" onclick="queuePlay(AfricanHeatPlaylist);"><i class="fas fa-play fa-xs"></i></div>
+                                                                        </span>
+                                                                        <img src="MONSA-IMGS/home/africanheat2.jpg" alt="">
+                                                                </div>
+                                        
+                                                            </div></a>
+                        
+                                                            <a href="#NewPlayList"><div class="single" id="browseNew">
+                                                                        <div class="caption">
+                                                                                <span id="playlist-Title">New Tracks</span><br>
+                                                                                <span id="playlist-Name">New Music Daily</span><br>
+                                                                                <span id="playlist-Category"> &nbsp;</span>
+                                                                                
+                                                                        </div>
+                                                                        <div class="artwork" id="home-eazi">
+                                                                                <span class="overlay">
+                                                                                        <div class="overlayPlay" onclick="queuePlay(NewMusicDailyPlaylist);"><i class="fas fa-play fa-xs"></i></div>
+                                                                                </span>
+                                                                                <img src="MONSA-IMGS/home/africanheat3.svg" alt="">
+                                                                        </div>
+                                                
+                                                                    </div></a>
+                        
+                                               
+                            <!-----------------Glider---------->             
+                                        </div>  
+                                    </div>
+
+
+
+                                    <div class="glider-contain multiple, new-singles-wrap" id="hot-tracks-wrap">
+                                                <div class="hot-tracks-title">
+                                                                <h1>Hot Tracks</h1>
+                                                                <span id="section-subtitles">Hits and top chart african music </span><br>
+                                                </div>
+                                                <div class="glider" id="hot-tracks">
+                                <!-----------------Glider---------->
+                                                    <div class="single" >
+                                                        <div class="song-item" onclick="getSong(this)" index='6'>
+                                                                        <div class="artwork2">
+                                                                                <span class="overlay">
+                                                                                <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                                                </span>
+                                                                                <img src="MONSA-IMGS/davido-risky.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="song-item-caption">
+                                                                                        <span id="song-item-Name">Risky (feat. Popcaan)</span><br>
+                                                                                        <span id="song-item-Artist">Mr. Eazi</span>
+                                                                        </div>
+                                                        </div>
+
+                                                        <div class="song-item" onclick="getSong(this)" index='18'>
+                                                                        <div class="artwork2">
+                                                                                <span class="overlay">
+                                                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                                                        </span>
+                                                                                <img src="MONSA-IMGS/jam-wizkid.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="song-item-caption">
+                                                                                        <span id="song-item-Name">Jam (feat. Wizkid & Chronixx)</span><br>
+                                                                                        <span id="song-item-Artist">Starboy</span>
+                                                                        </div>
+                                                        </div>
+
+                                                        <div class="song-item" onclick="getSong(this)" index='23'>
+                                                                        <div class="artwork2">
+                                                                                <span class="overlay">
+                                                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                                                        </span>
+                                                                                <img src="MONSA-IMGS/laughter,tears-albumcover,..- frireboy.jpeg" alt="">
+                                                                        </div>
+                                                                        <div class="song-item-caption">
+                                                                                        <span id="song-item-Name">King</span><br>
+                                                                                        <span id="song-item-Artist">Fireboy DML</span>
+                                                                        </div>
+                                                        </div>
+
+                                                        <div class="song-item" onclick="getSong(this)" index='26'>
+                                                                        <div class="artwork2">
+                                                                                <span class="overlay">
+                                                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                                                        </span>
+                                                                                <img src="MONSA-IMGS/tekno-skeletun.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="song-item-caption">
+                                                                                        <span id="song-item-Name">Skeletun</span><br>
+                                                                                        <span id="song-item-Artist">Tekno</span>
+                                                                        </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="single" >
+                                                                <div class="song-item" onclick="getSong(this)" index='19'>
+                                                                                <div class="artwork2">
+                                                                                        <span class="overlay">
+                                                                                                <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                                                                </span>
+                                                                                        <img src="MONSA-IMGS/Sarkodie-Saara-ft.-Efya.jpg" alt="">
+                                                                                </div>
+                                                                                <div class="song-item-caption">
+                                                                                                <span id="song-item-Name">Saara (feat. Efya)</span><br>
+                                                                                                <span id="song-item-Artist">Sarkodie</span>
+                                                                                </div>
+                                                                </div>
+        
+                                                                <div class="song-item" onclick="getSong(this)" index='20'>
+                                                                                <div class="artwork2">
+                                                                                        <span class="overlay">
+                                                                                                <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                                                                </span>
+                                                                                        <img src="MONSA-IMGS/stonebwoyb-takemeaway.jpg" alt="">
+                                                                                </div>
+                                                                                <div class="song-item-caption">
+                                                                                                <span id="song-item-Name">Take Me Away (feat. KiDi & Kuami Eugene)</span><br>
+                                                                                                <span id="song-item-Artist">Stonebwoy</span>
+                                                                                </div>
+                                                                </div>
+
+                                                                <div class="song-item" onclick="getSong(this)" index='24'>
+                                                                                <div class="artwork2">
+                                                                                        <span class="overlay">
+                                                                                                <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                                                                </span>
+
+                                                                                        <img src="MONSA-IMGS/sarkodie-regular.jpeg" alt="">
+                                                                                </div>
+                                                                                <div class="song-item-caption">
+                                                                                                <span id="song-item-Name">Regular (feat. Mugeez)</span><br>
+                                                                                                <span id="song-item-Artist">Sarkodie</span>
+                                                                                </div>
+                                                                </div>
+
+                                                                <div class="song-item" onclick="getSong(this)" index='27'>
+                                                                                <div class="artwork2">
+                                                                                        <span class="overlay">
+                                                                                                <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                                                                </span>
+                                                                                        <img src="MONSA-IMGS/africangiant -albumcover.jpg" alt="">
+                                                                                </div>
+                                                                                <div class="song-item-caption">
+                                                                                                <span id="song-item-Name">Killin Dem (feat. Burnaboy)</span><br>
+                                                                                                <span id="song-item-Artist">Zlatan</span>
+                                                                                </div>
+                                                                </div>
+        
+                                                            </div>
+
+                                                            <div class="single" >
+                                                                        <div class="song-item" onclick="getSong(this)" index='21'>
+                                                                                        <div class="artwork2">
+                                                                                                <span class="overlay">
+                                                                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                                                                        </span>
+                                                                                                <img src="MONSA-IMGS/ideyforu-manifest.jpeg" alt="">
+                                                                                        </div>
+                                                                                        <div class="song-item-caption">
+                                                                                                        <span id="song-item-Name">I Dey for U</span><br>
+                                                                                                        <span id="song-item-Artist">M.anifest</span>
+                                                                                        </div>
+                                                                        </div>
+                
+                                                                        <div class="song-item" onclick="getSong(this)" index='22'>
+                                                                                        <div class="artwork2">
+                                                                                                <span class="overlay">
+                                                                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                                                                        </span>
+                                                                                                <img src="MONSA-IMGS/your number-juls.jpeg" alt="">
+                                                                                        </div>
+                                                                                        <div class="song-item-caption">
+                                                                                                        <span id="song-item-Name">Your Number (feat. King Promise x Mugeez R2Bees)</span><br>
+                                                                                                        <span id="song-item-Artist">Juls</span>
+                                                                                        </div>
+                                                                        </div>
+
+                                                                        <div class="song-item" onclick="getSong(this)" index='25'>
+                                                                                        <div class="artwork2">
+                                                                                                <span class="overlay">
+                                                                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                                                                        </span>
+                                                                                                <img src="MONSA-IMGS/Adiza.jpeg" alt="">
+                                                                                        </div>
+                                                                                        <div class="song-item-caption">
+                                                                                                        <span id="song-item-Name">Adiza</span><br>
+                                                                                                        <span id="song-item-Artist">Afro Nation, Bisa Kdei, Adekunle Gold</span>
+                                                                                        </div>
+                                                                        </div>
+
+                                                                        <div class="song-item" onclick="getSong(this)" index='29'>
+                                                                                        <div class="artwork2">
+                                                                                                <span class="overlay">
+                                                                                                        <div class="overlayPlay2"><i class="fas fa-play fa-xs"></i></div>
+                                                                                                        </span>
+                                                                                                <img src="MONSA-IMGS/rema-dumebi.jpg" alt="">
+                                                                                        </div>
+                                                                                        <div class="song-item-caption">
+                                                                                                        <span id="song-item-Name">Dumebi</span><br>
+                                                                                                        <span id="song-item-Artist">Rema</span>
+                                                                                        </div>
+                                                                        </div>
+                
+                                                                    </div>
+                                
+                                                   
+                                
+                                                   
+                                    <!-----------------Glider---------->             
+                                                </div>  
+                                            </div>
+
+                                            <div class="album-section">
+                                                        <div class="new-albums-title">
+                                                                        <h1>New Albums</h1>
+                                                                        <span id="section-subtitles">Newest Releases from the hottest  Artists in Africa</span><br>
+                                                        </div>
+                                                        <div class="album-section-wrap">
+                                                                        <div class="album-section-left">
+                                                                                <a href="#FireboyDML">
+                                                                                        <div class="albumArt">
+                                                                                                <div class="albumArt-cover">
+                                                                                                        <span class="overlay">
+                                                                                                                <div class="overlayPlay" onclick="queuePlay(LaughterTearsGoosebumps);"><i class="fas fa-play fa-xs"></i></div>
+                                                                                                        </span>
+                                                                                                        <img src="MONSA-IMGS/laughter,tears-albumcover,..- frireboy.jpeg" alt="">
+                                                                                                </div>
+                                                                                                <div class="album-item-caption">
+                                                                                                                <span id="song-item-Name">Laughter, Tears & Goosebumps</span><br>
+                                                                                                                <span id="song-item-Artist">Fireboy DML</span>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                </a>
+                                                                                <a href="#TheGamble">
+                                                                                        <div class="albumArt">
+                                                                                                <div class="albumArt-cover">
+                                                                                                        <span class="overlay">
+                                                                                                                <div class="overlayPlay" onclick="queuePlay(TheGambleAlbum);"><i class="fas fa-play fa-xs"></i></div>
+                                                                                                        </span>
+                                                                                                        <img src="MONSA-IMGS/the-gamble-albumcover-manifest.jpg" alt="">
+                                                                                                </div>
+                                                                                                <div class="album-item-caption">
+                                                                                                                <span id="song-item-Name">The Gamble</span><br>
+                                                                                                                <span id="song-item-Artist">M.anifest</span>
+                                                                                                </div>
+                                                                                </div>
+                                                                                </a>
+                                                                        </div>
+                                                                        <div class="album-section-right">
+                                                                                    <a href="#MENCF2">
+                                                                                        <div class="albumArt">
+                                                                                                <div class="albumArt-cover">
+                                                                                                        <span class="overlay">
+                                                                                                                <div class="overlayPlay" onclick="queuePlay(MakeENoCauseFightII);"><i class="fas fa-play fa-xs"></i></div>
+                                                                                                        </span>
+                                                                                                        <img src="MONSA-IMGS/Make-E-No-Cause-Fight-II-artwork.jpg" alt="">
+                                                                                                </div>
+                                                                                                <div class="album-item-caption">
+                                                                                                                <span id="song-item-Name">Make E No Cause Fight 2</span><br>
+                                                                                                                <span id="song-item-Artist">Ajebutter 22, BOJ & Falz</span>
+                                                                                                </div>
+                                                                                    </div>
+                                                                                    </a>
+                                                                                    <a href="#SoundMan">
+                                                                                        <div class="albumArt">
+                                                                                                <div class="albumArt-cover">
+                                                                                                        <span class="overlay">
+                                                                                                                <div class="overlayPlay" onclick="queuePlay(SoundManVolI);"><i class="fas fa-play fa-xs"></i></div>
+                                                                                                        </span>
+                                                                                                        <img src="MONSA-IMGS/jam-wizkid.jpg" alt="">
+                                                                                                </div>
+                                                                                                <div class="album-item-caption">
+                                                                                                                <span id="song-item-Name">SoundMan Vol. 1</span><br>
+                                                                                                                <span id="song-item-Artist">StarBoy</span>
+                                                                                                </div>
+                                                                                    </div>
+                                                                                    </a>
+                                                                            </div>
+                                                                </div>
+                                            </div>
+
+                                            <div class="glider-contain multiple, new-singles-wrap">
+                                                        <div class="album-section">
+                                                                        <div class="new-albums-title">
+                                                                                        <h1>Featured Artists</h1>
+                                                                        </div>
+                                                        <div class="glider" id="ft-artist">
+                                        <!-----------------Glider---------->
+                                                            <div class="single">
+                                                                <div class="featured-artist"><img src="MONSA-IMGS/davido-headshot.jpg" alt=""></div>
+                                                                <div class="caption">
+                                                                       <p>Davido</p>
+                                                                </div>
+                                                            </div>
+                                        
+                                                            <div class="single" >
+                                                                    <div class="featured-artist"><img src="MONSA-IMGS/wizkid-headshot.jpg" alt=""></div>
+                                                                    <div class="caption">
+                                                                                <p>Wizkid</p>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="single">
+                                                                    <div class="featured-artist"><img src="MONSA-IMGS/burnaboy-headshot.jpg" alt=""></div>
+                                                                    <div class="caption">
+                                                                                <p>Burnaboy</p>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="single">
+                                                                                <div class="featured-artist"><img src="MONSA-IMGS/Mr-Eazi-headshot.jpg" alt=""></div>
+                                                                                <div class="caption">
+                                                                                            <p>Mr. Eazi</p>
+                                                                                </div>
+                                                                            </div>
+
+                                                                 <div class="single">
+                                                                                <div class="featured-artist"><img src="MONSA-IMGS/falz-headshot.jpeg" alt=""></div>
+                                                                                <div class="caption">
+                                                                                            <p>Falz</p>
+                                                                                </div>
+                                                                            </div> 
+                                                                            
+                                                                <div class="single">
+                                                                                <div class="featured-artist"><img src="MONSA-IMGS/rema-headshot.jpg" alt=""></div>
+                                                                                <div class="caption">
+                                                                                            <p>Rema</p>
+                                                                                </div>
+                                                                            </div>   
+                                        
+                                                        
+                                            <!-----------------Glider---------->             
+                                                        </div>  
+                                                    </div>
+           </div>
+
+        </div>
+        <!--------------main content end--------------->
+                
+        
+        <!-------------- fixed footer player--------------->
+        <div class="footer-player-wrap">
+            <div class="open-player" >
+                <div class="open-player-exit">
+                        <i class="fas fa-chevron-down fa-lg"></i>
+                </div>
+                <div class="open-player-art">
+                    <div class="square" id="albumArt"></div>
+                </div>
+                <div class="open-player-title">
+                    <div id="title"><h1>Soco</h1></div>
+                    <div id="by"><h6>Starboy</h6></div>
+                </div>
+                <div class="open-player-duration">
+                    <span class="bar"><span class="fill"></span></span>
+                        <input type="range" class="durationSlide" id="start" name="song" min="0"  step=".1" onchange="seekSong()">
+                        <div class="time">
+                            <div id="currentTime">00:00</div>
+                            <div id="durationTime">00:00</div>
+                        </div>
+                </div>
+                <div class="open-player-control">
+                    <div class="back" id="control" onclick="goBack()">
+                            <i class="fas fa-backward fa-xs"></i>
+                    </div>
+                    <div class="playpause" id="control" onclick="playOrpause()">
+                            <i class="fas fa-play " id="playPause"></i>
+                    </div>
+                    <div class="forward" id="control" onclick="goForward()"> 
+                            <i class="fas fa-forward fa-xs"></i>
+                    </div>
+                </div>
+                
+                <div class="open-player-volume">
+
+                    <div class="volumeIcon" id="volD"><i class="fas fa-volume-off"></i></div>
+                        
+                    <div class="volume-handle">
+                                <span class="volumeBar"><span class="volumeFill"></span></span>
+                                <input type="range" class="volumeSlide" id="volume" min="0" max="1" step="0.01" onchange="adjustVolume(this.value)">
+                        </div>
+                        
+                        <div class="volumeIcon" id="volU"><i class="fas fa-volume-up"></i></div>
+                </div>
+
+
+                
+            </div>
+
+            <div class="full-player-wrap">
+                        
+                    <div class="full-player">
+                            
+                            <div class="music-player" id="song">
+                
+                                    <div class="cover-art" id="albumArt2">
+                                            &nbsp;           
+                                        </div>
+                
+                                        <div class="song-details">
+                                                <div id="title2">Soco</div>
+                                                <div id="by2">Starboy</div>
+                                        </div>
+                
+        
+                                    </div>
+                                </div>
+                                <div class="wide-left">
+                                       <div class="wide-left-top">
+                                        <div class="wide-player-control">
+                                                <!-- <div class="shuffle" id="wide-control">
+                                                        <i class="fas fa-random fa-sm"></i>
+                                                </div> -->
+                                                <div class="back" id="wide-control" onclick="goBack()">
+                                                        <i class="fas fa-backward fa-sm"></i>
+                                                </div>
+                                                <div class="playpause" id="wide-control" onclick="playOrpause()">
+                                                        <i class="fas fa-play" id="wide-playPause"></i>
+                                                </div>
+                                                <div class="forward" id="wide-control" onclick="goForward()"> 
+                                                        <i class="fas fa-forward fa-sm"></i>
+                                                </div>
+                                                <!-- <div class="repeat" id="wide-control" onclick="">
+                                                        <i class="fas fa-redo-alt fa-xs"></i>
+                                                </div> -->
+                                            </div>
+                                        <div class="time">
+                                            <div id="wide-currentTime">00:00</div>
+                                            <div class="open-player-duration">
+                                                    <span class="bar"><span class="wide-fill"></span></span>
+                                                        <input type="range" class="durationSlide" id="wide-start" name="song" min="0"  step=".1" onchange="wseekSong()">
+                                                        
+                                                </div>
+                                                <div id="wide-durationTime">00:00</div>
+                                        </div>
+                                       </div>
+
+                                               <div class="wide-left-bottom">
+                                                <div class="open-player-volume">
+
+                                                        <div class="volumeIcon" id="volD"><i id="mute" class="fas fa-volume-off"></i></div>
+                                                            
+                                                        <div class="volume-handle">
+                                                                    <span class="volumeBar"><span class="mainvolumeFill"></span></span>
+                                                                    <input type="range" class="volumeSlide" id="wide-volume" min="0" max="1" step="0.01" onchange="adjustVolume(this.value)">
+                                                            </div>
+                                                            
+                                                    </div>
+                                                    
+                                               </div>
+                                               <div class="queue-button">
+                                                        <i class="fa fa-list-ul" aria-hidden="true"></i>
+                                               </div> 
+                                </div>
+                
+                
+                <div class="plybtn">
+                    <div class="ply" onclick="playOrpause2()"> 
+                        <i class="fas fa-play-circle" id="playPause2"></i>
+                     </div>
+             </div>
+                </div>
+                
+            <div class="music-player" id="menu">
+
+                <div class="menu-icon" id="home">
+                        <a href="#home">
+                        <i class="fas fa-music"></i>
+                    <div class="label"><p>Browse</p></div>
+                        </a>
+                </div>
+
+                <div class="menu-icon" id="search-icon">
+                        <a href="#search">
+                    <i class="fas fa-search"></i>
+                    <div class="label" ><p>Search</p></div>
+                        </a>
+                </div>
+
+                <div class="menu-icon">
+                    <i class="fas fa-stream"></i>
+                    <div class="label"><p>Library</p></div>
+                </div>
+                <div class="menu-icon" id="monsa">
+                    <i>M</i>
+                    <div class="label"><p>Monsa</p></div>
+                </div>
+            </div>
+
+        </div>
+            
+        </div>
+</div>
+        <!-------------- fixed footer player--------------->
+    </main-container>
+    <script src="monsa.js"></script>
+    <script src="glide.min.js"></script>
+
+    <script>
+        new Glider(document.querySelector(".glider"), {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            draggable: true,
+        
+            responsive: [
+    {
+      // screens greater than >= 768px
+      breakpoint: 540,
+      settings: {
+        // Set to `auto` and provide item width to adjust to viewport
+        slidesToShow: 1.5,
+        slidesToScroll: 'auto',
+        itemWidth: 100,
+        duration: 0.25
+      }
+    },{
+      // screens greater than >= 768px
+      breakpoint: 768,
+      settings: {
+        // Set to `auto` and provide item width to adjust to viewport
+        slidesToShow: 2.1,
+        slidesToScroll: 'auto',
+        itemWidth: 100,
+        duration: 0.25
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1.7,
+        slidesToScroll: 1,
+        itemWidth: 150,
+        duration: 0.25,
+        draggable: false,
+      }
+    },{
+      // screens greater than >= 1440px
+      breakpoint: 1440,
+      settings: {
+        slidesToShow: 3.5,
+        slidesToScroll: 1,
+        itemWidth: 150,
+        duration: 0.25,
+        draggable: false,
+      }
+    }
+  ]
+        });
+        new Glider(document.querySelector("#hot-tracks"), {
+            slidesToShow: 1.08,
+            slidesToScroll: 1,
+            draggable: true,
+
+            responsive: [
+    {
+      // screens greater than >= 775px
+      breakpoint: 768,
+      settings: {
+        // Set to `auto` and provide item width to adjust to viewport
+        slidesToShow: 2,
+        slidesToScroll: 'auto',
+        itemWidth: 150,
+        duration: 0.25
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        itemWidth: 150,
+        duration: 0.25,
+        draggable: false,
+      }
+    },{
+      // screens greater than >= 1440px
+      breakpoint: 1440,
+      settings: {
+        slidesToShow: 2.2,
+        slidesToScroll: 1,
+        itemWidth: 150,
+        duration: 0.25,
+        draggable: false,
+      }
+    }
+  ]
+        })
+        new Glider(document.querySelector("#ft-artist"), {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            draggable: true,
+
+            responsive: [
+    {
+      // screens greater than >= 775px
+      breakpoint: 775,
+      settings: {
+        // Set to `auto` and provide item width to adjust to viewport
+        slidesToShow: 4.5,
+        slidesToScroll: 'auto',
+        itemWidth: 150,
+        duration: 0.25
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        itemWidth: 150,
+        duration: 0.25,
+        draggable: false,
+      }
+    }
+  ]
+        })
+    </script>
+</body>
+</html>
