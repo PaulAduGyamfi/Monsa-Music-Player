@@ -21,5 +21,5 @@ Monsa Music is an Afro music streaming service developed through Electron with H
 
 <img src="monsa music screenshot.gif">
 
-# Download (macOS X)
+# Download (macOS)
 **[Download Monsa Music Player](https://pauladugyamfi.com/files/monsa-music-darwin-x64.zip "Download Monsa Music")**
